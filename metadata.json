@@ -1,0 +1,6 @@
+{
+  "name": "Multi Timer – Timer + Stopwatch",
+  "description": "Clean, modern multi-timer and precision stopwatch app inspired by Android Material 3 with circular progress rings, multiple simultaneous timers, sound alerts, and background notifications.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

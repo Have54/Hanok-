@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --color-brand-orange: #FF6B00;
+  --color-brand-orange-hover: #E65A00;
+  --color-brand-orange-light: #FFF2E8;
+  --color-brand-blue-bg: #F0F6FD;
+  --color-brand-blue-card: #FFFFFF;
+}
+
+:root {
+  font-family: var(--font-sans);
+  color-scheme: light dark;
+}
+
+/* Hide scrollbars for wheel picker and horizontal lists */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Tabular figures for timers */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Smooth rubber-band and scroll behavior */
+html, body {
+  overscroll-behavior-y: none;
+  -webkit-tap-highlight-color: transparent;
+}
